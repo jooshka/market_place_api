@@ -37,5 +37,7 @@ module MarketPlaceApiTutorial
       g.javascripts = false
       g.helper = false
     end
+
+    Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
   end
 end
